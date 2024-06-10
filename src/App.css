@@ -1,38 +1,87 @@
-.App {
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Headings */
+h1 {
+  padding: 2px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Input field styles */
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  border-radius: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Search container */
+.search-container {
+  background-color: rgb(215, 178, 178);
+}
+
+/* Book list styles */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Book card styles */
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: #ccc;
+  /* Ensure this background color is intended */
+}
+
+/* Button styles */
+button:hover {
+  background-color: rgb(249, 110, 11);
+}
+
+.card-btn {
+  background-color: rgb(55, 213, 213);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.main-btn {
+  background-color: rgb(105, 196, 105);
+  border-radius: 10px;
+  padding: 4px;
+  margin: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Highlighted text */
+.highlight {
+  display: inline-block;
+  background-color: rgb(241, 11, 11);
+  padding: 0 10px;
+  /* Optional: Adds some padding around the text */
+  color: white;
+  /* Optional: Changes the text color to contrast with the background */
 }
